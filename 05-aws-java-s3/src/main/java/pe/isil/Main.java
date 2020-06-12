@@ -21,8 +21,8 @@ public class Main {
 
         System.out.println("AWS - S3");
 
-        AWSCredentials credentials = new BasicAWSCredentials("AKIAXXXXXXXXXXX",
-                "XXXXXXXXXXXXXXXXXXXX");
+        AWSCredentials credentials = new BasicAWSCredentials("AKIAQKS6V3RVKL4LAWEB",
+                "3zgvuwLu5qaFkmdHcDWxN3Ejs5dB2kvdP7Y+bjpE");
 
         AmazonS3 s3Client = AmazonS3ClientBuilder
                 .standard()
@@ -30,7 +30,7 @@ public class Main {
                 .withRegion(Regions.US_WEST_1)
                 .build();
 
-        final String BUCKET_NAME = "a-jose-ventura";
+        final String BUCKET_NAME = "a-marco-soto";
 
         //(1) Create Bucket
         if( !s3Client.doesBucketExistV2(BUCKET_NAME) ){
